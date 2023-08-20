@@ -20,11 +20,8 @@ export default function NavBar() {
   };
 
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-light"
-      style={{ backgroundColor: "#C20605" }}
-    >
-      <div className="container px-4 px-lg-5">
+    <nav style={{ backgroundColor: "#C20605" }}>
+      <div >
         <a className="navbar-brand" href="#" style={{ color: "white" }}>
           <b>My Movie Plan</b>
         </a>
@@ -56,8 +53,13 @@ export default function NavBar() {
                 <b>Contact</b>
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/register">
+                <b>Register</b>
+              </NavLink>
+            </li>
           </ul>
-          <ul className="navbar-nav me-right mb-2 mb-lg-0 ms-lg-4">
+          <ul>
             {role === "user" && (
               <>
                 <li className="nav-item">
@@ -80,7 +82,7 @@ export default function NavBar() {
             )}
             {(name === null || name === "") && (
               <li className="nav-item">
-                <NavLink className="nav-link" to="/login/user">
+                <NavLink className="nav-link" to="/login">
                   <b>Log In</b>
                 </NavLink>
               </li>
