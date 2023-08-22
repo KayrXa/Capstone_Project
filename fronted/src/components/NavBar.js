@@ -20,8 +20,8 @@ export default function NavBar() {
   };
 
   return (
-    <nav style={{ backgroundColor: "#C20605" }}>
-      <div >
+    <nav style={{ backgroundColor: "#0C5D07" }}>
+      <div className="d-inline-flex p-2" >
         <a className="navbar-brand" href="#" style={{ color: "white" }}>
           <b>My Movie Plan</b>
         </a>

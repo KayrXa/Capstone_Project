@@ -29,8 +29,8 @@ export default function Register() {
   };
 
   return (
-    <div>
-      <div>
+    <div className="container px-4 px-lg-5">
+      <div  className="row gx-4 gx-lg-5 align-items-center my-5">
         <h3>Create an Account</h3>
         <p></p>
         <div >

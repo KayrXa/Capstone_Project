@@ -3,8 +3,8 @@ import React from "react";
 export default function Contact() {
   let pageContent = "";
   pageContent = (
-    <div>
-      <div>
+    <div className="container px-4 px-lg-5">
+      <div  className="row gx-4 gx-lg-5 align-items-center my-5">
         <h3>Contact</h3>
         <br />
         <p><b>Address:</b> Space 143, Rakovnik 269 01</p>
