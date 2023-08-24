@@ -6,52 +6,49 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
 @Entity
-@Table(name = "admin")
+@Table(name="admins")
 public class Admin {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int aid;
+	private String adminname;
+	private String adminpassword;
+	
+	public Admin() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int adid;
-    private String adname;
-    private String adpassword;
-    
-    public Admin() {
-        super();
-    }
+	public Admin(String adminname, String adminpassword) {
+		super();
+		this.adminname = adminname;
+		this.adminpassword = adminpassword;
+	}
 
-    public Admin(String adid, String adname, String adpassword) {
-        super();
-        this.adname = adname;
-        this.adpassword = adpassword;
-    }
+	public int getAid() {
+		return aid;
+	}
 
-    public int getAdid() {
-        return adid;
-    }
+	public void setAid(int aid) {
+		this.aid = aid;
+	}
 
-    public void setAdid(int adid) {
-        this.adid = adid;
-    }
+	public String getAdminname() {
+		return adminname;
+	}
 
-    public String getAdname() {
-        return adname;
-    }
+	public void setAdminname(String adminname) {
+		this.adminname = adminname;
+	}
 
-    public void setAdname(String adname) {
-        this.adname = adname;
-    }
+	public String getAdminpassword() {
+		return adminpassword;
+	}
 
-    public String getAdpassword() {
-        return adpassword;
-    }
-
-    public void setAdpassword(String adpassword) {
-        this.adpassword = adpassword;
-    }
-
-
+	public void setAdminpassword(String adminpassword) {
+		this.adminpassword = adminpassword;
+	}
 
 }
-

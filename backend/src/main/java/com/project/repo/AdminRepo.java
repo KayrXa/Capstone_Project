@@ -6,6 +6,6 @@ import com.project.entity.Admin;
 
 public interface AdminRepo extends CrudRepository<Admin, String> {
 
-    public Admin findByAdname(String adname);
+    public Admin findByAdminname(String adminname);
     
 }
