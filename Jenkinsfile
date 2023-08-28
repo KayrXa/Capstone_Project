@@ -1,13 +1,6 @@
 pipeline {
   agent any
-  options {
-    buildDiscarder(logRotator(numToKeepStr: '5'))
-  }
-  environment {
-    HEROKU_API_KEY = credentials('heroku-api-key')
-    IMAGE_NAME = 'KayrXa/capstone-react'
-    IMAGE_TAG = 'latest'
-    APP_NAME = 'capstone-react'
+  
   }
   stages {
     stage('Build') {
