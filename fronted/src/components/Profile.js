@@ -37,41 +37,41 @@ export default function Profile() {
     <div>
       <div className="container px-4 px-lg-5">
         <div className="row gx-4 gx-lg-5 align-items-center my-5">
-          <h3>Hello, {user.fname}!</h3>
+          <h3 style={{ color: "#492000" }}> Hello, {user.fname}!</h3>
           <p></p>
           <div>
             <p></p>
             <div className="row">
               <div className="col-lg-3 col-md-12">
-                <h5>Account Details:</h5>
+                <h5 style={{ color: "#492000" }}>Account Details:</h5>
                 <p>
-                  <b>User ID: </b>
+                  <b style={{ color: "#492000" }}>User ID: </b>
                   {user.uid}
                 </p>
                 <p>
-                  <b>Username: </b>
+                  <b style={{ color: "#492000" }}>Username: </b>
                   {user.username}
                 </p>
                 <p>
-                  <b>Name: </b>
+                  <b style={{ color: "#492000" }}>Name: </b>
                   {user.fname} {user.lname}
                 </p>
                 <p>
-                  <b>Email: </b>
+                  <b style={{ color: "#492000" }}>Email: </b>
                   {user.email}
                 </p>
               </div>
               <div className="col-lg-9 col-md-12">
-                <h5>Purchase History:</h5>
+                <h5 style={{ color: "#492000" }}>Purchase History:</h5>
                 <p></p>
-                <div>
-                  <table className="table table-striped table-dark">
+                <div className="row gx-4 gx-lg-5 align-items-center my-5">
+                  <table className="table table-striped table-secondary">
                     <thead>
                       <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Date</th>
                         <th scope="col">Total Price</th>
-                        <th scope="col">Detail</th>
+                        <th scope="col" >Detail</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -83,10 +83,7 @@ export default function Profile() {
                           <td>
                             <NavLink
                               className="btn btn-sm"
-                              style={{
-                                backgroundColor: "#C20605",
-                                color: "white",
-                              }}
+                              style={{ backgroundColor: "#006400", color: "white" }}
                               to={"/order/" + purchase.pid}
                             >
                               Detail

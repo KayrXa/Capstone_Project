@@ -20,7 +20,7 @@ export default function MovieDetail() {
     pageContent = (
       <div className="container px-4 px-lg-5">
         <div className="row gx-4 gx-lg-5 align-items-center my-5">
-          <h3>{movie.moviename}</h3>
+          <h3 style={{ color: " #FFA500" }}>{movie.moviename}</h3>
           <div className="row mt-5">
             <div className="col-xs-12 col-sm-3 col-md-3">
               <p>
@@ -31,23 +31,23 @@ export default function MovieDetail() {
                 />
               </p>
             </div>
-            <div className="col-xs-12 col-sm-9 col-md-9">
+            <div class="cta-inner bg-faded rounded">
               <p>
-                <b style={{ color: "#eb0216" }}>Date:</b> {movie.moviedate},{" "}
+                <b style={{ color: "#964B00" }}>Date:</b> {movie.moviedate},{" "}
                 {movie.movietime}
               </p>
               <p>
-                <b style={{ color: "#eb0216" }}>Language:</b> {movie.language}
+                <b style={{ color: "#964B00" }}>Language:</b> {movie.language}
               </p>
               <p>
-                <b style={{ color: "#eb0216" }}>Genre:</b> {movie.genre}
+                <b style={{ color: "#964B00" }}>Genre:</b> {movie.genre}
               </p>
               <p>
-                <b style={{ color: "#eb0216" }}>Description:</b>{" "}
+                <b style={{ color: "#964B00" }}>Description:</b>{" "}
                 {movie.description}
               </p>
               <p>
-                <b style={{ color: "#eb0216" }}>Ticket Price:</b> $
+                <b style={{ color: "#964B00" }}>Ticket Price:</b> $
                 {movie.ticketprice}
               </p>
             </div>
@@ -56,7 +56,7 @@ export default function MovieDetail() {
         <button
           onClick={() => navigate(-1)}
           type="button"
-          style={{ backgroundColor: "#C20605", color: "white" }}
+          style={{ backgroundColor: "#006400", color: "white" }}
           className="btn btn-sm"
         >
           Go Back

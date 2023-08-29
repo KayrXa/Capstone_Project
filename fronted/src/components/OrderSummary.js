@@ -44,14 +44,15 @@ export default function OrderSummary() {
       <div className="container px-4 px-lg-5">
         <div className="row gx-4 gx-lg-5 align-items-center my-5">
           <div className="text-center">
-            <h3>Thank You for Your Order!</h3>
+            <h3 style={{ color: "#492000" }}>Thank You for Your Order!</h3>
             <br></br>
-            <h5>
+            <h5 style={{ color: "#492000" }}>
                 Your order with ID: {order.pid} has been created successfully.
                 You can find the order details also in your profile.
             </h5>
             <p></p>
           </div>
+          <div class="cta-inner bg-faded text-center rounded">
           <div className="col-12">
             <br></br>
             {order.items.map((item) => {
@@ -77,6 +78,7 @@ export default function OrderSummary() {
                 <strong>${order.totalprice}</strong>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

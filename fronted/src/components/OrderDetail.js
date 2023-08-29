@@ -44,11 +44,12 @@ export default function OrderDetail() {
       <div className="container px-4 px-lg-5">
         <div className="row gx-4 gx-lg-5 align-items-center my-5">
           <div className="col-12">
-            <h5>Order ID: {order.pid}</h5>
+            <h5 style={{ color: "#492000" }}>Order ID: {order.pid}</h5>
             <br></br>
             <p>
-              <b>Purchase Date:</b> {order.purchasedate}
+              <b style={{ color: "#492000" }}>Purchase Date:</b> {order.purchasedate}
             </p>
+            <div class="cta-inner bg-faded text-center rounded">
             <p>
               <b>Purchased Items:</b>
             </p>
@@ -66,6 +67,7 @@ export default function OrderDetail() {
                 </div>
               ) : null;
             })}
+            
             <hr></hr>
             <div className="row mb-3 text-center">
               <div className="col-6">
@@ -73,6 +75,7 @@ export default function OrderDetail() {
               </div>
               <div className="col-3 text-right">
                 <strong>${order.totalprice}</strong>
+              </div>
               </div>
             </div>
           </div>

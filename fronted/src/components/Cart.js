@@ -59,13 +59,13 @@ export default function Cart() {
       <div className="row gx-4 gx-lg-5 align-items-center my-5">
         {cart.length === 0 && (
           <div>
-            <h3>Your Cart Is Empty</h3>
-            <p>Please, check available movies first.</p>
+            <h3 style={{ color: "#FF0000" }}> Your Cart Is Empty</h3>
+            <p style={{ color: "#492000" }}>Please, check available movies first.</p>
           </div>
         )}
         {cart.length !== 0 && (
           <div>
-            <h3>Your Cart</h3>
+            <h3 style={{ color: "#492000" }}>Your Cart</h3>
             <br></br>
           </div>
         )}
@@ -91,7 +91,7 @@ export default function Cart() {
                 onClick={() => addItem(movie)}
                 className="add text-center btn width:100px"
                 style={{
-                  backgroundColor: "#C20605",
+                  backgroundColor: "#006400",
                   color: "white",
                   width: "50px",
                 }}
@@ -110,7 +110,7 @@ export default function Cart() {
             <div className="row text-center">
               <div className="col-6"></div>
               <div className="col-3">
-                <strong>Total Price</strong>
+                <strong style={{ color: "#492000" }}>Total Price</strong>
               </div>
               <div className="col-3 text-right">
                 <strong>${totalPrice}</strong>

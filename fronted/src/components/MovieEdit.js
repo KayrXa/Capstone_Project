@@ -59,7 +59,7 @@ export default function MovieEdit() {
   return (
     <div className="container px-4 px-lg-5">
       <div className="row gx-4 gx-lg-5 my-5">
-        <h3>Edit Movie</h3>
+        <h3 style={{ color: "#492000" }}>Edit Movie</h3>
         <p></p>
         <div className="col-md-6">
           <form>
@@ -187,7 +187,7 @@ export default function MovieEdit() {
             <button
               type="submit"
               className="btn"
-              style={{ backgroundColor: "#C20605", color: "white" }}
+              style={{ backgroundColor: "#006400", color: "white" }}
               onClick={handleSubmit}
             >
               Edit Movie

@@ -20,51 +20,60 @@ export default function NavBar() {
   };
 
   return (
-    <nav style={{ backgroundColor: "#0C5D07" }}>
-      <div className="d-inline-flex p-2" >
-        <a className="navbar-brand" href="#" style={{ color: "white" }}>
-          <b>My Movie Plan</b>
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-            <li className="nav-item">
-              <NavLink className="nav-link" aria-current="page" to="/">
-                <b>About</b>
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/movies">
-                <b>Movies</b>
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
-                <b>Contact</b>
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/register">
-                <b>Register</b>
-              </NavLink>
-            </li>
-          </ul>
-          <ul>
+    <div>
+      <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-lower">Fancy Movies</span>
+        </h1>
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+          <a
+            class="navbar-brand text-uppercase fw-bold d-lg-none"
+            href="/"
+          >
+            Fancy Movies
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item px-lg-4">
+                <NavLink className="nav-link text-uppercase" aria-current="page" to="/">
+                  <b>About</b>
+                </NavLink>
+              </li>
+              <li class="nav-item px-lg-4">
+                <NavLink className="nav-link text-uppercase" to="/movies">
+                  <b>Movies</b>
+                </NavLink>
+              </li>
+              <li class="nav-item px-lg-4">
+                <NavLink className="nav-link text-uppercase" to="/contact">
+                  <b>Contact</b>
+                </NavLink>
+              </li>
+              <li class="nav-item px-lg-4">
+                <NavLink className="nav-link text-uppercase" to="/register">
+                  Register
+                </NavLink>
+              </li>
+            </ul>
+            <ul className="navbar-nav me-right mb-2 mb-lg-0 ms-lg-4">
             {role === "user" && (
               <>
-                <li className="nav-item">
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/cart">
+                <li className="nav-item px-lg-4">
+                  <li className="nav-item px-lg-4">
+                    <NavLink className="nav-link text-uppercase" to="/cart">
                       <i className="bi-cart-fill me-1"></i>
                       <b>Cart</b>
                       <span className="badge bg-black text-white ms-1 rounded-pill">
@@ -73,30 +82,32 @@ export default function NavBar() {
                     </NavLink>
                   </li>
                 </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to={"/profile/" + name}>
+                <li className="nav-item px-lg-4">
+                  <NavLink className="nav-link text-uppercase" to={"/profile/" + name}>
                     <b>Profile</b>
                   </NavLink>
                 </li>
               </>
             )}
             {(name === null || name === "") && (
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/login">
+              <li className="nav-item px-lg-4">
+                <NavLink className="nav-link text-uppercase" to="/login">
                   <b>Log In</b>
                 </NavLink>
               </li>
             )}
             {name !== null && name !== "" && (
-              <li className="nav-item">
-                <a className="nav-link" href="/" onClick={() => logOut()}>
+              <li className="nav-item px-lg-4">
+                <a className="nav-link text-uppercase" href="/" onClick={() => logOut()}>
                   <b>Log Out</b>
                 </a>
               </li>
             )}
           </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      
+    </div>
   );
 }

@@ -40,6 +40,8 @@ export default function Movie({ movie }) {
   if (movie !== undefined) {
     pageContent = (
       <div>
+        
+        <div class="cta-inner bg-faded rounded">
         <div>
           <p>
             <img
@@ -60,16 +62,18 @@ export default function Movie({ movie }) {
           <p>${movie.ticketprice}</p>
           <NavLink
             className="btn btn-sm"
-            style={{ backgroundColor: "#C20605", color: "white" }}
+            style={{ backgroundColor: "#006400", color: "white" }}
             to={"/movies/" + movie.mid}
           >
             More Info
           </NavLink>{" "}
+          </div>
+
           {role === "user" && (
               <button
               type="submit"
               className="btn btn-sm"
-              style={{ backgroundColor: "#C20605", color: "white" }}
+              style={{ backgroundColor: "#006400", color: "white" }}
               onClick={() => addToCart()}
             >
               <b>Add to Cart!</b>
@@ -80,7 +84,7 @@ export default function Movie({ movie }) {
               <br></br>
               <NavLink
                 className="btn btn-sm"
-                style={{ backgroundColor: "#C20605", color: "white" }}
+                style={{ backgroundColor: "#006400", color: "white" }}
                 to={"/movies/edit/" + movie.mid}
               >
                 Edit
@@ -99,7 +103,7 @@ export default function Movie({ movie }) {
               <button
                 type="submit"
                 className="btn btn-sm"
-                style={{ backgroundColor: "#c205054a", color: "rgba(255, 255, 255, 0.484)" }}
+                style={{ backgroundColor: "#006400", color: "white" }}
                 onClick={() => changeStatus()}
               >
                 Enable

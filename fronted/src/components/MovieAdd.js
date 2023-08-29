@@ -76,12 +76,12 @@ export default function MovieAdd() {
   return (
     <div className="container px-4 px-lg-5">
       <div className="row gx-4 gx-lg-5 my-5">
-        <h3>Add New Movie</h3>
+        <h3 style={{ color: "#492000" }}>Add New Movie</h3>
         <p></p>
         <div className="col-md-6">
           <form>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
+              <label className="form-label" style={{ color: "#492000" }}>
                 Name:
               </label>{" "}
               <input
@@ -95,7 +95,7 @@ export default function MovieAdd() {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
+              <label className="form-label" style={{ color: "#492000" }}>
                 Genre:
               </label>{" "}
               <select
@@ -112,7 +112,7 @@ export default function MovieAdd() {
               </select>
             </div>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
+              <label className="form-label" style={{ color: "#492000" }}>
                 Description:
               </label>{" "}
               <input
@@ -126,7 +126,7 @@ export default function MovieAdd() {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
+              <label className="form-label" style={{ color: "#492000" }}>
                 Language:
               </label>{" "}
               <select
@@ -143,7 +143,7 @@ export default function MovieAdd() {
               </select>
             </div>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
+              <label className="form-label" style={{ color: "#492000" }}>
                 Image URL:
               </label>{" "}
               <input
@@ -157,7 +157,7 @@ export default function MovieAdd() {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
+              <label className="form-label" style={{ color: "#492000" }}>
                 Date:
               </label>{" "}
               <input
@@ -171,7 +171,7 @@ export default function MovieAdd() {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
+              <label className="form-label" style={{ color: "#492000" }}>
                 Time:
               </label>{" "}
               <select
@@ -188,7 +188,7 @@ export default function MovieAdd() {
               </select>
             </div>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
+              <label className="form-label" style={{ color: "#492000" }}>
                 Ticket Price:
               </label>{" "}
               <input
@@ -204,7 +204,7 @@ export default function MovieAdd() {
             <button
               type="submit"
               className="btn"
-              style={{ backgroundColor: "#C20605", color: "white" }}
+              style={{ backgroundColor: "#006400", color: "white" }}
               onClick={handleSubmit}
             >
               Add Movie
@@ -214,8 +214,9 @@ export default function MovieAdd() {
         <div className="col-md-6">
           <form>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
-                Add New Genre:
+              <label className="form-label" style={{ color: "#492000" }}>
+                <h4>Add New Genre</h4>
+                
               </label>{" "}
               <input
                 type="text"
@@ -230,7 +231,7 @@ export default function MovieAdd() {
             <button
               type="submit"
               className="btn"
-              style={{ backgroundColor: "#C20605", color: "white" }}
+              style={{ backgroundColor: "#006400", color: "white" }}
               onClick={handleSubmitGenre}
             >
               Add Genre
@@ -239,8 +240,8 @@ export default function MovieAdd() {
           <br></br>
           <form>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>
-                Add New Language:
+              <label className="form-label" style={{ color: "#492000" }}>
+                <h4>Add New Language</h4>
               </label>{" "}
               <input
                 type="text"
@@ -255,7 +256,7 @@ export default function MovieAdd() {
             <button
               type="submit"
               className="btn"
-              style={{ backgroundColor: "#C20605", color: "white" }}
+              style={{ backgroundColor: "#006400", color: "white" }}
               onClick={handleSubmitLanguage}
             >
               Add Language

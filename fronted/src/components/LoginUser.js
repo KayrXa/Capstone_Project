@@ -30,12 +30,12 @@ export default function UserLogin() {
   return (
     <div className="container px-4 px-lg-5">
       <div className="row gx-4 gx-lg-5 align-items-center my-5">
-        <h3 id="titLogin">Log in to purchase tickets</h3>
+        <h3 id="titLogin" style={{ color: "#492000" }}>Log in to purchase tickets</h3>
         <p></p>
         <div className="col-md-6">
           <form>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>Username:</label>{" "}
+              <label className="form-label" style={{ color: "#492000" }}>Username:</label>{" "}
               <input
                 id="boxUsername"
                 type="text"
@@ -48,7 +48,7 @@ export default function UserLogin() {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label" style={{ color: "#eb0216" }}>Password:</label>{" "}
+              <label className="form-label" style={{ color: "#492000" }}>Password:</label>{" "}
               <input
                 id="boxPassword"
                 type="password"
@@ -64,18 +64,18 @@ export default function UserLogin() {
               id="btnLogin"
               type="submit"
               className="btn"
-              style={{ backgroundColor: "#C20605", color: "white" }}
+              style={{ backgroundColor: "#006400", color: "white" }}
               onClick={handleSubmit}
             >
               Log In
             </button>
           </form>
-          <div className="text-center">
+          <div class="cta-inner bg-faded text-center rounded">
             <p></p>
             <NavLink
               id="linkRegister"
               className="nav-link"
-              style={{ textDecoration: "underline", color: "white" }}
+              style={{ textDecoration: "underline", color: "#FFA500" }}
               to={"/register"}
             >
             <h3>Are you new here? Register!</h3>

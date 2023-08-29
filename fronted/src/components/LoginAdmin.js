@@ -30,12 +30,12 @@ export default function AdminLogin() {
   return (
     <div className="container px-4 px-lg-5">
       <div className="row gx-4 gx-lg-5 align-items-center my-5">
-        <h3>Log in as Admin to administrate the website</h3>
+        <h3 style={{ color: "#492000" }}>Log in as Admin to administrate the website</h3>
         <p></p>
         <div className="col-md-6">
           <form>
             <div className="mb-3">
-              <label className="form-label">Admin's Name:</label>{" "}
+              <label className="form-label" style={{ color: "#492000" }}>Admin's Name:</label>{" "}
               <input
                 type="text"
                 className="form-control"
@@ -45,7 +45,7 @@ export default function AdminLogin() {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Password:</label>{" "}
+              <label className="form-label" style={{ color: "#492000" }}>Password:</label>{" "}
               <input
                 type="password"
                 className="form-control"
@@ -63,7 +63,7 @@ export default function AdminLogin() {
               Log In
             </button>
           </form>
-          <p>if you do not remember the credentials contact web developer Pavel Rygl 777 777 777</p>
+          <p style={{ color: "#FF0000" }}>if you do not remember the credentials contact web developer Pavel Rygl 777 777 777</p>
         </div>
       </div>
     </div>
